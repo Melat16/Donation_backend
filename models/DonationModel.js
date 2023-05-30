@@ -22,7 +22,7 @@ const Donate_Schema = new mongoose.Schema(
         },
 
         Organization: {
-            type: Array,
+            type: String,
             required: true,
         },
         Country: {
@@ -34,12 +34,5 @@ const Donate_Schema = new mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model("Donate", Donate_Schema);
+module.exports = mongoose.model("Donation", Donate_Schema);
 
-// {
-//     'Name':'hannah',
-//     'Email' : 'hannah@gmail.com',
-//     'PhoneNumber' :'0923456789',
-//     'Organization' : 'ECS',
-//     'Country' : 'Ethiopia'
-//   }

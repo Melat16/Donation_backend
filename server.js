@@ -29,6 +29,6 @@ app.use(cors());
 app.use("/api/donation",donationRoute); 
 
 app.listen(process.env.Port || 6000, () => {
-    console.log(`Server running at port ${Port}`)
+    console.log(`Server running at port 6000 `)
 }
 )
